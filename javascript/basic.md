@@ -1,6 +1,6 @@
+-----------
 자바스크립트 타입
 =
------------
 기본타입
 -
 1. **Number** - 실수, 부동소수점 64비트(double)
@@ -18,3 +18,18 @@ console.log(nullCheck === null); // true
 1. **Object**
 2. **Array** - 배열도 객체로 취급
 3. **Function** - 함수도 객체로 취급
+---------------
+NaN(Not a Number)
+=
+> 수치연산 처리후 정상적인 값을 얻지 못할때 발생하는 에러
+```javascript
+console.log(1 - 'hello'); // NaN
+
+var foo = {
+  name: 'foo',
+  major: 'cs'
+};
+foo['full-name'] = 'ffoo';
+console.log(foo['full-name']); // 'ffoo'
+console.log(foo.full-name); // NaN, 프로퍼티명이 연산자를 포함할 경우
+```
