@@ -13,3 +13,28 @@ TIL
 参考
 =
 * MarkDown文法は[ここ](https://gist.github.com/ihoneymon/652be052a0727ad59601)を参照すること。
+---------------------------------
+Categories
+=
+* java
+* C++
+* Data-visualization
+* Database
+* Design-patterns
+* Django
+* Docker
+* Git
+* Jekyll
+* Ml
+* Python
+* Reactjs
+* Uncategorized
+* Vim
+-------------------------
+Other TIL Collections
+=
+>Inspired by
+* [@thoughtbot](https://github.com/thoughtbot/til)
+* [@jbranchaud](https://github.com/jbranchaud/til)
+* [@milooy](https://github.com/milooy/TIL)
+* [@channprj](https://github.com/channprj/TIL)
