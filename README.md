@@ -12,6 +12,4 @@ TIL
 ---------------------------------
 参考
 =
-* MarkDown文法は
-[ここ]: https://gist.github.com/ihoneymon/652be052a0727ad59601
-を参照すること。
+* MarkDown文法は[ここ](https://gist.github.com/ihoneymon/652be052a0727ad59601)を参照すること。
