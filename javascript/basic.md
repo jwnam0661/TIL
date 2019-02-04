@@ -33,3 +33,4 @@ foo['full-name'] = 'ffoo';
 console.log(foo['full-name']); // 'ffoo'
 console.log(foo.full-name); // NaN, 프로퍼티명이 연산자를 포함할 경우
 ```
+
