@@ -13,6 +13,5 @@ TIL
 参考
 =
 * MarkDown文法は
-Link: [ここ][md]
-[md]: https://gist.github.com/ihoneymon/652be052a0727ad59601
+[ここ]: https://gist.github.com/ihoneymon/652be052a0727ad59601
 を参照すること。
