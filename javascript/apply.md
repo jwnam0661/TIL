@@ -1,4 +1,4 @@
-apply()
+함수의 호출 apply()
 -
 ```javascript
 function sum(arg1, arg2){
