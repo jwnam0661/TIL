@@ -4,7 +4,7 @@
 &&
 -
 > &&는 좌항과 우항의 값이 모두 참(true)일 때 참이 된다. And라고 읽는다. 다음 예제를 보자. 결과는 1이다. and의 좌우항이 모두 true인 것은 첫 번째 조건문 밖에 없기 때문이다
-```javascript
+```java
 package org.opentutorials.javatutorials.conditionaloperator;
  
 public class AndDemo {
@@ -31,7 +31,7 @@ public class AndDemo {
 }
 ```
 > 논리 연산자를 이용한 사례를 살펴보자.
-```javascript
+```java
 package org.opentutorials.javatutorials.conditionaloperator;
  
 public class LoginDemo3 {
@@ -55,7 +55,7 @@ public class LoginDemo3 {
 ||
 -
 > ||(or)는 좌우항 중에 하나라도 true라면 전체가 true가 되는 논리 연산자다. 다음 예를 보자. 결과는 1,2,3이 출력된다. 마지막 조건문의 or는 좌항과 우항이 모두 false이기 때문에 false가 된다. 
-```javascript
+```java
 package org.opentutorials.javatutorials.conditionaloperator;
  
 public class OrDemo {
@@ -79,7 +79,7 @@ public class OrDemo {
 }
 ```
 > 다음 예제는 id 값으로 egoing, k8805, sorialgi 중의 하나를 사용하고 비밀번호는 111111을 입력하면 right 외의 경우에는 wrong를 출력하는 예다.
-```javascript
+```java
 package org.opentutorials.javatutorials.conditionaloperator;
  
 public class LoginDemo4 {
@@ -106,7 +106,7 @@ public class LoginDemo4 {
 !
 -
 > !는 부정의 의미로 not이라고 읽는다. Boolean의 값을 역전시키는 역할을 한다. true에 !를 붙으면 false가 되고 false에 !을 붙이면 true가 된다. 아래의 결과는 2다.
-```javascript
+```java
 package org.opentutorials.javatutorials.conditionaloperator;
  
 public class NotDemo {
