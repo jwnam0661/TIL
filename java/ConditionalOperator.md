@@ -1,9 +1,11 @@
 논리 연산자
 =
+<details><summary>クリックすると展開されます</summary>
 > Boolean의 값을 결합해서 코드를 좀 더 간결하게 만들 수 있는 논리 연산자(Conditional Operator)에 대해서 
 &&
 -
 > &&는 좌항과 우항의 값이 모두 참(true)일 때 참이 된다. And라고 읽는다. 다음 예제를 보자. 결과는 1이다. and의 좌우항이 모두 true인 것은 첫 번째 조건문 밖에 없기 때문이다
+ 
 ```java
 package org.opentutorials.javatutorials.conditionaloperator;
  
