@@ -185,8 +185,8 @@ class E{
 예외의 선조 - Throwable
 -
 > 우선 [ArithmeticException](https://docs.oracle.com/javase/7/docs/api/java/lang/ArithmeticException.html)의 API 문서를 통해서 예외들의 가계도를 살펴보자. 아래 그림은 API 문서의 일부를 캡처한 것이다.
+
+
 ![2061](https://user-images.githubusercontent.com/23206749/52991902-ffcb0000-3451-11e9-9c0a-c73aba1c1b1e.png)
+> 이것을 통해서 ArithmeticException의 부모 클래스 중에 java.lang.Exception 클래스가 있다는 사실을 알 수 있다. ArithmeticException 클래스는 Exception 클래스의 하위 클래스였던 것이다. 그렇기 때문에 Exception 클래스가 더 많은 예외 상황을 포괄하는 것이고 ArithmeticException 클래스는 더 구체적인 상황을 특정하는 것이다. 잘 이해가 안 되면 이전에 소개했던 예제를 보자.
 
-
-
-![2063](https://user-images.githubusercontent.com/23206749/52991212-1754b980-344f-11e9-97a6-7da673d6348e.png)
