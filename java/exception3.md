@@ -118,7 +118,74 @@ public class CalculatorDemo {
 |예외|사용해야 할 상황
 |:--------|:--------|
 |IllegalArgumentException| 매개변수가 의도하지 않은 상황을 유발시킬 때| 
+|IllegalStateException| 메소드를 호출하기 위한 상태가 아닐 때| 
+|NullPointerException| 매개 변수 값이 null 일 때| 
+|IndexOutOfBoundsException| 인덱스 매개 변수 값이 범위를 벗어날 때|
+|ArithmeticException| 산술적인 연산에 오류가 있을 때| 
 
+예외의 여러가지 상황들
+-
+> 예외에 대한 시야를 넓히기 위해서 몇가지 상황들을 간단한 코드로 만들어 보았다.
+```java
+package org.opentutorials.javatutorials.exception;
+class E{
+    void throwArithmeticException(){
+        throw new ArithmeticException();
+    }
+}
+```
+> 문제없이 컴파일이 될 것이다. 이번엔 아래와 같이 코드를 바꿔보자.
+```java
+package org.opentutorials.javatutorials.exception;
+import java.io.IOException;
+class E{
+    void throwArithmeticException(){
+        throw new ArithmeticException();
+    }
+    void throwIOException(){
+        throw new IOException();
+    }
+}
+```
+> 이번에는 컴파일 되지 않을 것이다. 에러 내용은 아래와 같다. 왜 그럴까?
+```java
+src\org\opentutorials\javatutorials\exception\ThrowExceptionDemo2.java:8: error: unreported exception IOException; must be caught or declared to be thrown
+                throw new IOException();
+                ^
+1 error
+```
+> 에러에는 아래와 같이 적혀있다.
+
+> unreported exception IOException; must be caught or declared to be thrown
+
+> 즉 IOException은 try...catch하거나 throw 해야 한다는 뜻이다.
+
+> 이상하다 ArithmeticException, IOException 모두 Exception이다. 그럼에도 불구하고 유독 IOException만 try...catch 혹은 throw 를 해야 한다는 뜻이다. 자바는 이 두개의 예외를 다른 방법으로 대하고 있는 것이다. 우선 아래와 같이 코드를 변경해서 에러를 없애자.
+```java
+package org.opentutorials.javatutorials.exception;
+import java.io.IOException;
+class E{
+    void throwArithmeticException(){
+        throw new ArithmeticException();
+    }
+    void throwIOException1(){
+        try {
+            throw new IOException();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    void throwIOException2() throws IOException{
+        throw new IOException();
+    }
+}
+```
+> 예제의 핵심은 IOException은 예외처리를 강제하고 있지만 ArithmeticException은 그렇지 않다 점이다. 그 이유를 알아보자.
+
+예외의 선조 - Throwable
+-
+> 우선 [ArithmeticException](https://docs.oracle.com/javase/7/docs/api/java/lang/ArithmeticException.html)의 API 문서를 통해서 예외들의 가계도를 살펴보자. 아래 그림은 API 문서의 일부를 캡처한 것이다.
+![2061](https://user-images.githubusercontent.com/23206749/52991902-ffcb0000-3451-11e9-9c0a-c73aba1c1b1e.png)
 
 
 
