@@ -50,18 +50,21 @@ System.out.println(A.containsAll(B)); // false
 System.out.println(A.containsAll(C)); // true
 ```
 ![2155](https://user-images.githubusercontent.com/23206749/53145261-dee5e480-35e2-11e9-89ae-8c10e976c5f5.png)
+
 합집합(union)
 -
 ```java
 A.addAll(B);
 ```
 ![2156](https://user-images.githubusercontent.com/23206749/53145263-df7e7b00-35e2-11e9-9b5a-cfd517f21025.png)
+
 교집합(intersect)
 -
 ```java
 A.retainAll(B);
 ```
 ![2157](https://user-images.githubusercontent.com/23206749/53145264-df7e7b00-35e2-11e9-8018-dbe365646f4a.png)
+
 차집합(difference)
 -
 ```java
