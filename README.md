@@ -1,17 +1,3 @@
-■洗濯機
-　26.5　NA-VX900AL/R　ランキング1位
-　22.5　NA-VG2400L/R　※乾燥機能：衣類にダメージが多少、エネルギー消費↑
-
-■ソファ
-　カテゴリ名：カウチソファ
-
-■家具アウトレット
-　ビッグウッド
-　大塚家具
-　https://www.seiloo.co.jp/area/kanto?sort=&area_id=3&maker_slug%5B0%5D=idc&gclid=EAIaIQobChMI-_aXnvjN6QIVWaqWCh04IwipEAAYASAAEgKw7PD_BwE
-　https://www.idc-otsuka.jp/
-
-
 TIL
 =
 > Today I Learned
